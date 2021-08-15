@@ -1,0 +1,179 @@
+.noscroll {
+	overflow: hidden;
+	max-height: 100vh;
+	
+}
+
+.pad-20 {
+	padding: 20px;
+}
+
+.no-border {
+	border: none;
+}
+
+.full-width-on-mobile {
+	@include breakpoint-down(small) {
+		width: 100%;
+	}
+}
+
+// Visibility
+.hide-for-mobile {
+	@include breakpoint-down(small) {
+		display: none;
+	}
+}
+
+.hide-for-desktop {
+	@include breakpoint-up(medium) {
+		display: none;
+	}
+}
+
+.white {
+	color: white;
+}
+
+.block-at-tablet {
+	@include breakpoint-up(medium) {
+		display: block;
+	}
+}
+
+// Spacing
+.container {
+	margin: 0 auto;
+	max-width: 90rem; // 1440px for desktop
+
+	&--pall {
+		padding: $mobile;
+
+		@include breakpoint-up(medium) {
+			padding: $tablet;
+		}
+	}
+	&--py {
+		padding-top: $mobile;
+		padding-bottom: $mobile;
+
+		@include breakpoint-up(medium) {
+			padding-top: $tablet;
+			padding-bottom: $tablet;
+		}
+	}
+	&--px {
+		padding-right: $mobile;
+		padding-left: $mobile;
+
+		@include breakpoint-up(medium) {
+			padding-right: $tablet;
+			padding-left: $tablet;
+		}
+	}
+	&--pt {
+		padding-top: $mobile;
+
+		@include breakpoint-up(medium) {
+			padding-top: $tablet;
+		}
+	}
+	&--pr {
+		padding-right: $mobile;
+	}
+	&--pb {
+		padding-bottom: $mobile;
+	}
+	&--pl {
+		padding-left: $mobile;
+		@include breakpoint-up(medium) {
+			padding-left: $tablet;
+		}
+	}
+}
+
+// Flexbox
+.flex {
+	display: flex;
+
+	&-jc-sb {
+		justify-content: space-between;
+	}
+
+	&-jc-c {
+		justify-content: center;
+	}
+
+	&-ai-c {
+		align-items: center;
+	}
+
+	&-half {
+		flex-basis: 50%;
+	}
+
+	&--lg {
+		@include breakpoint-up(large) {
+			display: flex;
+			justify-content: space-between;
+		}
+	}
+
+	&-half--lg {
+		@include breakpoint-up(large) {
+			flex-basis: calc(50% - 2rem);
+		}
+	}
+}
+
+// Grid
+.grid--2x2 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4x4 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: center;
+	align-items: center;
+}
+
+// TYPOGRAPHY
+
+.heading-2 {
+	font-weight: 700;
+	font-size: $font-heading-2;
+	line-height: $line-height-heading-2;
+	margin-bottom: 0.5rem;
+}
+
+.subhead-1 {
+	font-weight: 400;
+	font-size: $font-subhead-1;
+	line-height: $line-height-subhead-1;
+}
+.subhead-2 {
+	font-weight: 400;
+	font-size: $font-subhead-2;
+	line-height: $line-height-subhead-2;
+}
+
+.link-2 {
+	color: $gray;
+	font-size: $font-link-2;
+	line-height: $line-height-link-2;
+	letter-spacing: $letter-spacing-link-2;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+.display-font {
+	font-size: 6.25rem;
+	line-height: 6.25rem;
+	@include breakpoint-up(medium) {
+		font-size: $font-display;
+		line-height: $line-height-display;
+	}
+}
