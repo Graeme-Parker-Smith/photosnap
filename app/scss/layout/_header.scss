@@ -3,6 +3,72 @@
     text-transform: uppercase;
     font-size: 1.2rem;
     font-weight: bold;
+    z-index: 1;
+
+        // Hamburger Open Styles (style rules for when header element has "open" class)
+        &.open {
+            nav {
+                z-index: 3;
+            }
+            .header__toggle {
+                > span:first-child {
+                    transform: rotate(48deg);
+                    background: $black;
+                }
+    
+                > span:nth-child(2) {
+                    // opacity: 0;
+                    transform: translateX(50px);
+                    background: transparent;
+                    -webkit-box-shadow: none;
+                    box-shadow: none;
+                }
+    
+                > span:last-child {
+                    transform: rotate(-48deg);
+                    background: $black;
+                }
+            }
+    
+            .header__menu {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                transform: translateY(18.3rem);
+                margin: 0 auto;
+
+                > a {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+        // End hamburger-open styles
+
+            // full screen overlay hidden by default
+    .overlay {
+        opacity: 0;
+        position: fixed;
+        top: 110px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        // background-color: $darkBlue;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent);
+
+        // overlay becomes visible after adding "fade-in" class
+        &.fade-in {
+            @include breakpoint-down(small) {
+                display: block;
+                z-index: 2;
+            }
+        }
+    }
+
+    nav {
+        position: relative;
+    }
 
     &__toggle {
         // Mobile Menu Toggle
@@ -21,7 +87,33 @@
     }
 
     &__menu {
-        display: none;
+        // display: none;
+        background: $white;
+        color: $black;
+        padding: 1.03125rem;
+        width: 100%;
+        letter-spacing: 0.25rem;
+        height: 18.25rem;
+        margin: 0 2rem 0 auto;
+        font-size: 1.5rem;
+        // display: none;
+
+        transition: transform 500ms ease-in-out;
+        position: absolute;
+        right: 0;
+        top: -11.425rem;
+        transform: translateY(-18.3rem);
+        padding: 1.75rem;
+        z-index: -2;
+
+        @include breakpoint-up(medium){
+            display: none;
+        }
+
+        > .cta {
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__links {
