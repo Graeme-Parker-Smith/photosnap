@@ -1,9 +1,8 @@
 // Colors
-$black: rgb(0, 0, 0);
-$gray: #7d7d7d;
-$light-gray: #353535;
-$very-light-gray: #f3f3f3;
-$white: rgb(255, 255, 255);
+$accent: linear-gradient(to right, #ffc593, #bc7198, #5a77ff);
+$black: #000;
+$gray: #dfdfdf;
+$white: #fff;
 
 // TYPOGRAPHY
 $font-body: 14px;
@@ -39,6 +38,6 @@ $line-height-display: 150px;
 $sans: 'DM Sans', sans-serif;
 
 // Container Padding
-$mobile: 1.5rem; //24
-$tablet: 2.5rem; //40
+$mobile: 2.4rem; //24
+$tablet: 4rem; //40
 // $desktop: 10.3125rem; //165
