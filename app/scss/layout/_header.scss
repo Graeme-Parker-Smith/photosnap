@@ -5,52 +5,44 @@
     font-weight: bold;
     z-index: 1;
 
-        // Hamburger Open Styles (style rules for when header element has "open" class)
-        &.open {
-            nav {
-                z-index: 3;
+    // Hamburger Open Styles (style rules for when header element has "open" class)
+    &.open {
+        nav {
+            z-index: 3;
+        }
+        .header__toggle {
+            > span:first-child {
+                transform: rotate(45deg);
+                background: $black;
             }
-            .header__toggle {
-                > span:first-child {
-                    transform: rotate(48deg);
-                    background: $black;
-                }
-    
-                > span:nth-child(2) {
-                    // opacity: 0;
-                    transform: translateX(50px);
-                    background: transparent;
-                    -webkit-box-shadow: none;
-                    box-shadow: none;
-                }
-    
-                > span:last-child {
-                    transform: rotate(-48deg);
-                    background: $black;
-                }
-            }
-    
-            .header__menu {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                
-                transform: translateY(18.3rem);
-                margin: 0 auto;
 
-                > a {
-                    margin-bottom: 2rem;
-                }
+            // > span:nth-child(2) {
+            //     // opacity: 0;
+            //     transform: translateX(50px);
+            //     background: transparent;
+            //     -webkit-box-shadow: none;
+            //     box-shadow: none;
+            // }
+
+            > span:last-child {
+                transform: rotate(-45deg);
+                background: $black;
             }
         }
-        // End hamburger-open styles
 
-            // full screen overlay hidden by default
+        .header__menu {
+            transform: translateY(18.3rem);
+
+            
+        }
+    }
+    // End hamburger-open styles
+
+    // full screen overlay hidden by default
     .overlay {
         opacity: 0;
         position: fixed;
-        top: 110px;
+        top: 31.5rem;
         right: 0px;
         bottom: 0px;
         left: 0px;
@@ -62,6 +54,7 @@
             @include breakpoint-down(small) {
                 display: block;
                 z-index: 2;
+                top: 7rem;
             }
         }
     }
@@ -75,12 +68,13 @@
 
         > span {
             display: block;
-            width: 26px;
+            width: 20px;
             height: 2px;
+            transform-origin: 6px;
             background-color: black;
             transition: all 300ms ease-in-out;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 5px;
             }
         }
@@ -90,24 +84,31 @@
         // display: none;
         background: $white;
         color: $black;
-        padding: 1.03125rem;
+        padding: 3.2rem;
         width: 100%;
         letter-spacing: 0.25rem;
-        height: 18.25rem;
         margin: 0 2rem 0 auto;
         font-size: 1.5rem;
-        // display: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
 
         transition: transform 500ms ease-in-out;
         position: absolute;
         right: 0;
         top: -11.425rem;
         transform: translateY(-18.3rem);
-        padding: 1.75rem;
+        
         z-index: -2;
 
-        @include breakpoint-up(medium){
+        @include breakpoint-up(medium) {
             display: none;
+        }
+
+        > a:not(.cta) {
+            margin-bottom: 2.6rem;
         }
 
         > .cta {
@@ -118,7 +119,7 @@
 
     &__links {
         > a {
-            padding: .2rem;
+            padding: 0.2rem;
             margin-right: 3.2rem;
         }
     }
@@ -126,6 +127,6 @@
         padding: 1.2rem 1.6rem;
         background-color: $black;
         color: $white;
-        letter-spacing: .2rem;
+        letter-spacing: 0.2rem;
     }
 }
