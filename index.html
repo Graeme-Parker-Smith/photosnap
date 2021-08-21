@@ -16,14 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="app/scss/style.css">
+    <link rel="stylesheet" href="app/scss/style.css" />
     <title>Frontend Mentor | Photosnap Website Challenge</title>
   </head>
   <body>
     <header class="header">
       <div class="overlay has-fade"></div>
       <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-
         <a class="header__logo" href="">
           <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
             <defs>
@@ -54,7 +53,7 @@
           <a href="">Features</a>
           <a href="">Pricing</a>
         </div>
-        
+
         <a href="" class="btn cta hide-for-mobile">Get an invite</a>
 
         <div class="header__menu has-fade">
@@ -64,27 +63,305 @@
           <div class="dec-line"></div>
           <a href="" class="btn cta">Get an invite</a>
         </div>
-
       </nav>
     </header>
 
-    Stories Features Pricing Get an invite Create and share your photo Stories
-    Photosnap is a platform for photographers and visual storytellers. We make
-    it easy to share photos, tell stories and connect with others. Beautiful
-    stories every time We provide design templates to ensure your stories look
-    terrific. Easily add photos, text, embed maps and media from other networks.
-    Then share your story with everyone. View the stories Designed for everyone
-    Photosnap can help you create stories that resonate with your audience. Our
-    tool is designed for photographers of all levels, brands, businesses you
-    name it. View the stories The Mountains by John Appleseed Read Story Sunset
-    Cityscapes by Benjamin Cruz Read Story 18 Days Voyage by Alexei Borodin Read
-    Story Architecturals by Samantha Brooke Read Story 100% Responsive No matter
-    which the device you’re on, our site is fully responsive and stories look
-    beautiful on any screen. No Photo Upload Limit Our tool has no limits on
-    uploads or bandwidth. Freely upload in bulk and share all of your stories in
-    one go. Available to Embed Embed Tweets, Facebook posts, Instagram media,
-    Vimeo or YouTube videos, Google Maps, and more. Home Stories Features
-    Pricing Get an invite Copyright 2019. All Rights Reserved
+    <main class="main">
+      <section class="post">
+        <div class="post__img">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/home/desktop/create-and-share.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/home/tablet/create-and-share.jpg"
+            />
+            <img
+              src="assets/home/mobile/create-and-share.jpg"
+              alt="photographer peering reflectively over a pier, contemplating the possibilities, presumably."
+            />
+          </picture>
+        </div>
+        <div class="post__desc">
+          <h2 class="heading-1">Create and share your photo Stories.</h2>
+          <p class="text-body">
+            Photosnap is a platform for photographers and visual storytellers.
+            We make it easy to share photos, tell stories and connect with
+            others.
+          </p>
+          <h4 class="link-1 cta-2">
+            <a href="">GET AN INVITE</a>
+          </h4>
+        </div>
+      </section>
+
+      <section class="post">
+        <div class="post__img">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/home/desktop/beautiful-stories.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/home/tablet/beautiful-stories.jpg"
+            />
+            <img
+              src="assets/home/mobile/beautiful-stories.jpg"
+              alt="photographer peering reflectively over a pier, contemplating the possibilities, presumably."
+            />
+          </picture>
+        </div>
+        <div class="post__desc">
+          <h2 class="heading-1">BEAUTIFUL STORIES EVERY TIME</h2>
+          <p class="text-body">
+            We provide design templates to ensure your stories look terrific.
+            Easily add photos, text, embed maps and media from other networks.
+            Then share your story with everyone.
+          </p>
+          <h4 class="link-1 cta-2">
+            <a href="">VIEW THE STORIES</a>
+          </h4>
+        </div>
+      </section>
+
+      <section class="post">
+        <div class="post__img">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/home/desktop/designed-for-everyone.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/home/tablet/designed-for-everyone.jpg"
+            />
+            <img
+              src="assets/home/mobile/designed-for-everyone.jpg"
+              alt="photographer peering reflectively over a pier, contemplating the possibilities, presumably."
+            />
+          </picture>
+        </div>
+        <div class="post__desc">
+          <h2 class="heading-1">DESIGNED FOR EVERYONE</h2>
+          <p class="text-body">
+            Photosnap can help you create stories that resonate with your
+            audience. Our tool is designed for photographers of all levels,
+            brands, businesses you name it.
+          </p>
+          <h4 class="link-1 cta-2">
+            <a href="">VIEW THE STORIES</a>
+          </h4>
+        </div>
+      </section>
+
+      <section class="stories grid">
+        <div class="stories__story">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcet="assets/stories/desktop/mountains.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcet="assets/stories/tablet/mountains.jpg"
+            />
+            <img
+              src="assets/stories/mobile/mountains.jpg"
+              alt="mountains"
+              class="stories-story__img"
+            />
+          </picture>
+          <h3 class="heading-3">The Mountains</h3>
+          <p class="stories__story__author">by John Appleseed</p>
+          <div class="line-dec"></div>
+          <h4 class="link-1 cta-3">
+            <a href="">Read Story</a>
+          </h4>
+        </div>
+
+        <div class="stories__story">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcet="assets/stories/desktop/cityscapes.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcet="assets/stories/tablet/cityscapes.jpg"
+            />
+            <img
+              src="assets/stories/mobile/cityscapes.jpg"
+              alt="cityscapes"
+              class="stories-story__img"
+            />
+          </picture>
+          <h3 class="heading-3">Sunset Cityscapes</h3>
+          <p class="stories__story__author">by Benjamin Cruz</p>
+          <div class="line-dec"></div>
+          <h4 class="link-1 cta-3">
+            <a href="">Read Story</a>
+          </h4>
+        </div>
+
+        <div class="stories__story">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcet="assets/stories/desktop/18-days-voyage.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcet="assets/stories/tablet/18-days-voyage.jpg"
+            />
+            <img
+              src="assets/stories/mobile/18-days-voyage.jpg"
+              alt="18-days-voyage"
+              class="stories-story__img"
+            />
+          </picture>
+          <h3 class="heading-3">18 Days Voyage</h3>
+          <p class="stories__story__author">by Alexei Borodin</p>
+          <div class="line-dec"></div>
+          <h4 class="link-1 cta-3">
+            <a href="">Read Story</a>
+          </h4>
+        </div>
+
+        <div class="stories__story">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcet="assets/stories/desktop/architecturals.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcet="assets/stories/tablet/architecturals.jpg"
+            />
+            <img
+              src="assets/stories/mobile/architecturals.jpg"
+              alt="architecturals"
+              class="stories-story__img"
+            />
+          </picture>
+          <h3 class="heading-3">Architecturals</h3>
+          <p class="stories__story__author">by Samantha Brooke</p>
+          <div class="line-dec"></div>
+          <h4 class="link-1 cta-3">
+            <a href="">Read Story</a>
+          </h4>
+        </div>
+      </section>
+
+      <section class="features-3">
+        <div class="feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+            <path
+              d="M31.195 32.674c0-.654-.529-1.183-1.183-1.183H4.88c-.653 0-1.183.53-1.183 1.183v31.195c0 .653.53 1.182 1.183 1.182h25.133c.654 0 1.183-.53 1.183-1.182V32.674zM28.83 62.686H6.062v-28.83H28.83v28.83zm-10.194 3.4h-2.37a1.182 1.182 0 100 2.366h2.37a1.183 1.183 0 000-2.366z"
+            />
+            <path
+              d="M68.33 0H52.298C50.32 0 48.64 1.545 48.64 3.523v6.235H12.292a6.694 6.694 0 00-6.674 6.696v11.34h-.724C2.168 27.795 0 30.063 0 32.792v34.168a4.864 4.864 0 004.897 4.893h26.086a3.91 3.91 0 002.835-1.183c.743-.765 1.221-1.737 1.073-2.798v-5.777h27.576a6.736 6.736 0 006.724-6.696V51.17a1.23 1.23 0 00-1.223-1.198h-1.734V38.44h2.095c1.978 0 3.523-1.678 3.523-3.656V3.523A3.483 3.483 0 0068.33 0zM51.005 7.688h18.48V28.83h-18.48V7.688zM52.3 2.366h16.03a1.12 1.12 0 011.158 1.157v1.8h-18.48v-1.8c0-.673.618-1.157 1.292-1.157zM7.984 16.454a4.326 4.326 0 014.308-4.33h36.349v3.4H12.22c-.654 0-1.132.594-1.132 1.247v11.024H7.984V16.454zm24.172 52.57c-.31.309-.735.477-1.173.463H4.9a2.5 2.5 0 01-2.536-2.532v-34.16c0-1.43 1.106-2.635 2.532-2.635h25.101c1.43 0 2.529 1.205 2.529 2.63v35.1c0 .011.036.007.036.02.026.411-.122.815-.407 1.113zm-2.154-41.23H13.454V17.89H48.64v16.894a3.712 3.712 0 003.658 3.656h6.1v11.532H43.995c-.33.003-.646.144-.87.389l-1.116 1.194a4.312 4.312 0 01-3.175 1.374h-3.944v-20.14c0-2.726-2.16-4.993-4.89-4.993zm36.823 27.604a4.368 4.368 0 01-4.358 4.331H34.891v-4.435h3.944a6.689 6.689 0 004.915-2.14l.765-.817h22.31v3.061zm-2.956-5.427h-3.105V38.44h3.105v11.532zm4.46-13.897H52.3a1.347 1.347 0 01-1.293-1.291v-3.588h18.48v3.588c0 .674-.483 1.29-1.157 1.29z"
+            />
+            <path
+              d="M61.947 32.23h-3.105a1.183 1.183 0 000 2.365h3.105a1.182 1.182 0 100-2.365z"
+            />
+          </svg>
+          <p class="text-body">
+            No matter which device you’re on, our site is fully responsive and
+            stories look beautiful on any screen.
+          </p>
+        </div>
+
+        <div class="feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="36">
+            <path
+              d="M71.087 19.105a1.056 1.056 0 00-1.19.904 15.715 15.715 0 01-5.2 9.667 15.714 15.714 0 01-10.384 3.914c-2.082 0-4.104-.4-6.01-1.189a1.15 1.15 0 00-.102-.036c-.022-.006-2.272-.71-5.621-3.368a1.056 1.056 0 00-1.313 1.654c3.436 2.728 5.85 3.584 6.271 3.72 2.15.883 4.43 1.331 6.775 1.331 4.34 0 8.523-1.577 11.779-4.44a17.827 17.827 0 005.898-10.967 1.056 1.056 0 00-.903-1.19z"
+            />
+            <path
+              d="M45.67 25.17c2.242 1.997 5.03 4.04 8.713 4.04h.004c6.256-.003 11.346-5.095 11.346-11.35 0-6.259-5.092-11.35-11.35-11.35-4.315 0-7.257 2.505-9.337 4.688-3.044 3.194-9.947 11.385-10.198 11.702-6.619 8.377-10.55 9.385-10.765 9.435a.8.8 0 00-.23.066 15.63 15.63 0 01-5.351 1.175l-.67.014A15.622 15.622 0 016.679 28.94a15.624 15.624 0 01-4.566-11.2c.03-4.189 1.705-8.126 4.715-11.085 2.975-2.923 6.88-4.527 11.015-4.527h.16a15.65 15.65 0 015.664 1.113c.112.044.223.088.335.13.55.206 5.395 2.163 10.85 9.087 0 0-2.344 2.862-2.886 3.505a79.573 79.573 0 00-5.482-5.414c-2.24-1.998-5.028-4.04-8.712-4.04h-.004c-.376 0-.757.018-1.13.055a1.056 1.056 0 00.209 2.102c.304-.03.614-.046.922-.046h.004c1.67 0 3.843.418 7.306 3.505a78.432 78.432 0 015.503 5.456 161.824 161.824 0 01-5.001 5.481c-2.659 2.79-5.067 4.034-7.809 4.034-5.093 0-9.237-4.144-9.237-9.238a9.23 9.23 0 014.12-7.693 1.056 1.056 0 10-1.172-1.757 11.339 11.339 0 00-5.06 9.45c0 6.259 5.091 11.35 11.35 11.35 4.315 0 7.256-2.505 9.336-4.688 3.044-3.194 10.386-11.94 10.386-11.94.005-.005.01-.01.013-.016 6.498-8.144 10.351-9.132 10.564-9.181a.796.796 0 00.23-.066c1.7-.704 3.501-1.1 5.352-1.176l.669-.013a15.73 15.73 0 0115.53 13.274 1.056 1.056 0 002.086-.327A17.846 17.846 0 0054.313.016h-.022L53.6.032h-.022a17.74 17.74 0 00-5.987 1.296c-.883.196-4.895 1.49-11.366 9.465-5.567-6.93-10.51-9.034-11.483-9.398a14.312 14.312 0 01-.293-.113A17.752 17.752 0 0018.023.018c-4.761-.05-9.26 1.775-12.675 5.132C1.934 8.506.035 12.972 0 17.726A17.725 17.725 0 005.18 30.43a17.72 17.72 0 0012.662 5.272h.022l.691-.014h.022a17.739 17.739 0 005.987-1.296c.872-.194 4.788-1.456 11.104-9.144.603.69 1.216 1.354 1.828 1.98a1.056 1.056 0 001.511-1.475 47.766 47.766 0 01-1.984-2.164c.554-.67 2.624-3.191 3.166-3.835a79.567 79.567 0 005.482 5.415zm.905-12.515c2.658-2.79 5.066-4.033 7.808-4.033 5.093 0 9.238 4.144 9.238 9.238 0 5.091-4.143 9.235-9.235 9.237h-.003c-1.67 0-3.844-.417-7.307-3.504a78.35 78.35 0 01-5.503-5.457 162.117 162.117 0 015.002-5.48z"
+            />
+          </svg>
+          <p class="text-body">
+            Our tool has no limits on uploads or bandwidth. Freely upload in
+            bulk and share all of your stories in one go.
+          </p>
+        </div>
+
+        <div class="feature">
+          <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+            <path
+              d="M31.195 32.674c0-.654-.529-1.183-1.183-1.183H4.88c-.653 0-1.183.53-1.183 1.183v31.195c0 .653.53 1.182 1.183 1.182h25.133c.654 0 1.183-.53 1.183-1.182V32.674zM28.83 62.686H6.062v-28.83H28.83v28.83zm-10.194 3.4h-2.37a1.182 1.182 0 100 2.366h2.37a1.183 1.183 0 000-2.366z"
+            />
+            <path
+              d="M68.33 0H52.298C50.32 0 48.64 1.545 48.64 3.523v6.235H12.292a6.694 6.694 0 00-6.674 6.696v11.34h-.724C2.168 27.795 0 30.063 0 32.792v34.168a4.864 4.864 0 004.897 4.893h26.086a3.91 3.91 0 002.835-1.183c.743-.765 1.221-1.737 1.073-2.798v-5.777h27.576a6.736 6.736 0 006.724-6.696V51.17a1.23 1.23 0 00-1.223-1.198h-1.734V38.44h2.095c1.978 0 3.523-1.678 3.523-3.656V3.523A3.483 3.483 0 0068.33 0zM51.005 7.688h18.48V28.83h-18.48V7.688zM52.3 2.366h16.03a1.12 1.12 0 011.158 1.157v1.8h-18.48v-1.8c0-.673.618-1.157 1.292-1.157zM7.984 16.454a4.326 4.326 0 014.308-4.33h36.349v3.4H12.22c-.654 0-1.132.594-1.132 1.247v11.024H7.984V16.454zm24.172 52.57c-.31.309-.735.477-1.173.463H4.9a2.5 2.5 0 01-2.536-2.532v-34.16c0-1.43 1.106-2.635 2.532-2.635h25.101c1.43 0 2.529 1.205 2.529 2.63v35.1c0 .011.036.007.036.02.026.411-.122.815-.407 1.113zm-2.154-41.23H13.454V17.89H48.64v16.894a3.712 3.712 0 003.658 3.656h6.1v11.532H43.995c-.33.003-.646.144-.87.389l-1.116 1.194a4.312 4.312 0 01-3.175 1.374h-3.944v-20.14c0-2.726-2.16-4.993-4.89-4.993zm36.823 27.604a4.368 4.368 0 01-4.358 4.331H34.891v-4.435h3.944a6.689 6.689 0 004.915-2.14l.765-.817h22.31v3.061zm-2.956-5.427h-3.105V38.44h3.105v11.532zm4.46-13.897H52.3a1.347 1.347 0 01-1.293-1.291v-3.588h18.48v3.588c0 .674-.483 1.29-1.157 1.29z"
+            />
+            <path
+              d="M61.947 32.23h-3.105a1.183 1.183 0 000 2.365h3.105a1.182 1.182 0 100-2.365z"
+            />
+          </svg>
+          <p class="text-body">
+            Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube
+            videos, Google Maps, and more.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container grid">
+        <a href="" class="footer__logo">
+          <span class="sr-only">footer logo</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
+            <defs>
+              <linearGradient id="a" x1="0%" x2="50%" y1="85.457%" y2="14.543%">
+                <stop offset="0%" stop-color="#FFC593" />
+                <stop offset="51.945%" stop-color="#BC7198" />
+                <stop offset="100%" stop-color="#5A77FF" />
+              </linearGradient>
+            </defs>
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#000"
+                fill-rule="nonzero"
+                d="M31.108 15.568v-4.541h2.703c.836 0 1.6-.133 2.292-.4a5.19 5.19 0 001.773-1.113 5.1 5.1 0 001.146-1.676c.273-.642.41-1.344.41-2.108 0-.75-.137-1.449-.41-2.098a5.072 5.072 0 00-1.146-1.686A5.19 5.19 0 0036.103.832c-.692-.266-1.456-.4-2.292-.4H27v15.136h4.108zm2.487-8.217h-2.487V4.108h2.487c.49 0 .9.162 1.232.487.332.324.497.702.497 1.135 0 .432-.165.81-.497 1.135-.332.324-.742.486-1.232.486zm12.54 8.217V9.73h5.514v5.838h4.108V.432h-4.108v5.622h-5.514V.432h-4.108v15.136h4.108zM66.784 16a8.616 8.616 0 003.319-.638 8.401 8.401 0 002.68-1.74 8.192 8.192 0 001.785-2.552c.432-.965.648-1.989.648-3.07a7.428 7.428 0 00-.648-3.07 8.192 8.192 0 00-1.784-2.552 8.401 8.401 0 00-2.681-1.74A8.616 8.616 0 0066.783 0c-1.196 0-2.306.213-3.329.638a8.432 8.432 0 00-2.67 1.74A8.192 8.192 0 0059 4.93 7.428 7.428 0 0058.351 8c0 1.081.217 2.105.649 3.07a8.192 8.192 0 001.784 2.552 8.432 8.432 0 002.67 1.74c1.023.425 2.133.638 3.33.638zm0-3.676A4.285 4.285 0 0165.119 12a3.942 3.942 0 01-1.34-.908 4.33 4.33 0 01-.887-1.373A4.479 4.479 0 0162.568 8c0-.62.108-1.193.324-1.719a4.33 4.33 0 01.886-1.373c.375-.39.822-.692 1.34-.908a4.285 4.285 0 011.666-.324c.59 0 1.142.108 1.654.324.512.216.958.519 1.34.908.382.39.681.847.898 1.373.216.526.324 1.1.324 1.719 0 .62-.108 1.193-.324 1.719a4.236 4.236 0 01-.898 1.373c-.382.39-.828.692-1.34.908a4.206 4.206 0 01-1.654.324zm18.054 3.244V4.108h4.216V.432h-12.54v3.676h4.216v11.46h4.108zM98.784 16a8.616 8.616 0 003.319-.638 8.401 8.401 0 002.68-1.74 8.192 8.192 0 001.785-2.552c.432-.965.648-1.989.648-3.07a7.428 7.428 0 00-.648-3.07 8.192 8.192 0 00-1.784-2.552 8.401 8.401 0 00-2.681-1.74A8.616 8.616 0 0098.783 0c-1.196 0-2.306.213-3.329.638a8.432 8.432 0 00-2.67 1.74A8.192 8.192 0 0091 4.93 7.428 7.428 0 0090.351 8c0 1.081.217 2.105.649 3.07a8.192 8.192 0 001.784 2.552 8.432 8.432 0 002.67 1.74c1.023.425 2.133.638 3.33.638zm0-3.676A4.285 4.285 0 0197.119 12a3.942 3.942 0 01-1.34-.908 4.33 4.33 0 01-.887-1.373A4.479 4.479 0 0194.568 8c0-.62.108-1.193.324-1.719a4.33 4.33 0 01.886-1.373c.375-.39.822-.692 1.34-.908a4.285 4.285 0 011.666-.324c.59 0 1.142.108 1.654.324.512.216.958.519 1.34.908.382.39.681.847.898 1.373.216.526.324 1.1.324 1.719 0 .62-.108 1.193-.324 1.719a4.236 4.236 0 01-.898 1.373c-.382.39-.828.692-1.34.908a4.206 4.206 0 01-1.654.324zM114.568 16c.95 0 1.801-.133 2.55-.4.75-.267 1.385-.627 1.904-1.081.519-.454.915-.98 1.189-1.578.274-.599.41-1.236.41-1.914 0-.88-.172-1.6-.518-2.162a4.35 4.35 0 00-1.298-1.362 6.98 6.98 0 00-1.697-.822l-1.697-.562a7.533 7.533 0 01-1.297-.551c-.346-.195-.52-.465-.52-.811 0-.332.148-.63.444-.898.295-.266.688-.4 1.178-.4.375 0 .714.062 1.016.184.303.123.563.263.779.422.26.173.49.367.692.584l2.378-2.487a5.559 5.559 0 00-1.276-1.08c-.432-.275-.98-.523-1.643-.747C116.5.112 115.706 0 114.784 0c-.865 0-1.65.13-2.357.39-.706.259-1.308.605-1.805 1.037-.498.432-.883.93-1.157 1.492a3.908 3.908 0 00-.41 1.73c0 .879.172 1.6.518 2.162a4.35 4.35 0 001.297 1.362 6.98 6.98 0 001.698.822c.612.201 1.178.389 1.697.562.519.173.951.357 1.297.551.346.195.52.465.52.81 0 .433-.174.812-.52 1.136-.346.324-.821.487-1.427.487-.49 0-.933-.083-1.33-.25a5.466 5.466 0 01-1.027-.55 5.352 5.352 0 01-.886-.822l-2.378 2.486c.432.49.944.923 1.535 1.298.504.331 1.131.63 1.88.897.75.267 1.63.4 2.639.4zm12.54-.432V7.135l6.508 8.433h3.546V.432h-4.108v8.433L126.568.432H123v15.136h4.108zm16.216 0l1.081-3.244h4.973l1.081 3.244h4.433L149.162.432h-4.54l-5.73 15.136h4.432zm4.973-6.487h-2.81l1.405-4.432 1.405 4.432zm12.433 6.487v-4.541h2.702c.836 0 1.6-.133 2.292-.4a5.19 5.19 0 001.773-1.113 5.1 5.1 0 001.146-1.676c.274-.642.411-1.344.411-2.108 0-.75-.137-1.449-.41-2.098a5.072 5.072 0 00-1.147-1.686 5.19 5.19 0 00-1.773-1.114c-.692-.266-1.456-.4-2.292-.4h-6.81v15.136h4.108zm2.486-8.217h-2.486V4.108h2.486c.49 0 .901.162 1.233.487.331.324.497.702.497 1.135 0 .432-.166.81-.497 1.135-.332.324-.743.486-1.233.486z"
+              />
+              <path fill="url(#a)" d="M0 16L9.5 0 19 16z" />
+            </g>
+          </svg>
+        </a>
+
+        <div class="footer__socials">
+          <a href="" class="footer__socials__social social--facebook">
+            <span class="sr-only">facebook link</span>
+          </a>
+          <a href="" class="footer__socials__social social--youtube">
+            <span class="sr-only">youtube link</span>
+          </a>
+          <a href="" class="footer__socials__social social--twitter">
+            <span class="sr-only">twitter link</span>
+          </a>
+          <a href="" class="footer__socials__social social--pinterest">
+            <span class="sr-only">pinterest link</span>
+          </a>
+          <a href="" class="footer__socials__social social--instagram">
+            <span class="sr-only">instagram link</span>
+          </a>
+        </div>
+
+        <nav class="footer__menu">
+          <a href="">Home</a>
+          <a href="">Stories</a>
+          <a href="">Features</a>
+          <a href="">Pricing</a>
+        </nav>
+
+        <a class="link-1 cta-2">Get An Invite</a>
+
+        <p class="footer__copyright">Copyright 2019. All Rights Reserved</p>
+      </div>
+    </footer>
 
     <script src="app/js/script.js"></script>
   </body>
