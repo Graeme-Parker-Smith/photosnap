@@ -1,16 +1,31 @@
 .features {
-        width: 31rem;
-        margin: 8rem auto;
+    width: 31rem;
+    margin: 8rem auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5.6rem;
+    > .feature {
         display: flex;
         flex-direction: column;
-        row-gap: 5.6rem;
-        > .feature {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            > *:nth-child(2){
+        align-items: center;
+        text-align: center;
+        > *:nth-child(2) {
+            margin: 4.4rem auto 1.6rem auto;
+        }
+        &:nth-child(2) {
+            > *:nth-child(2) {
                 margin: 6.2rem auto 1.6rem auto;
             }
         }
+        .text-body {
+            margin: 0 auto;
+        }
+    }
+
+    // tablet styles
+    @include breakpoint-up(medium) {
+        margin: 12rem auto;
+        width: 45.7rem;
+        row-gap: 8rem;
+    }
 }
