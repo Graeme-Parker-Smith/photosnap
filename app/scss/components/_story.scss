@@ -26,8 +26,8 @@
     }
 
 
-    // tablet styles 
-    @include breakpoint-up(medium) {
+    // 560px styles 
+    @include breakpoint-up(xsmall) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 0;

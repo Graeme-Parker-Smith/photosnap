@@ -22,8 +22,8 @@
         }
     }
 
-    // tablet styles
-    @include breakpoint-up(medium) {
+    // 560px styles
+    @include breakpoint-up(xsmall) {
         margin: 12rem auto;
         width: 45.7rem;
         row-gap: 8rem;

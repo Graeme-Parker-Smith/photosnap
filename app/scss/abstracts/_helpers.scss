@@ -281,6 +281,14 @@
 		left: 3.3rem;
 		width: 12.8rem;
 		height: 0.6rem;
+
+		// reposition at 560px breakpoint
+		@include breakpoint-up(xsmall) {
+			left: -5.4rem;
+			width: 0.6rem;
+			height: 100%;
+
+		}
 	}
 }
 
