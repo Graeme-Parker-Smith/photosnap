@@ -1,0 +1,27 @@
+.stories {
+    margin-top: 2rem;
+    &__story {
+        position: relative;
+        display: block;
+        &__text {
+            color: $white;
+            position: absolute;
+            left: 3.2rem;
+            right: 3.2rem;
+            bottom: 4rem;
+            z-index: 2;
+            > .dec-line {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+        &::after {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.66) 100%);
+        }
+    }
+}

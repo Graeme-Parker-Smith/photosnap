@@ -1,0 +1,37 @@
+.footer {
+    // Make Logo text white in footer
+    &__logo {
+        margin-bottom: 3.2rem;
+        svg > g > path:first-child {
+            fill: $white;
+        }
+    }
+    &__socials {
+        display: flex;
+        &__social {
+            width: 2rem;
+            height: 2rem;
+            cursor: pointer;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .social {
+            &--facebook {
+                background-image: url("../../assets/shared/desktop/facebook.svg");
+            }
+            &--youtube {
+                background-image: url("../../assets/shared/desktop/youtube.svg");
+            }
+            &--twitter {
+                background-image: url("../../assets/shared/desktop/twitter.svg");
+            }
+            &--pinterest {
+                background-image: url("../../assets/shared/desktop/pinterest.svg");
+            }
+            &--instagram {
+                background-image: url("../../assets/shared/desktop/instagram.svg");
+            }
+        }
+    }
+}
