@@ -5,16 +5,16 @@ $gray: #dfdfdf;
 $white: #fff;
 
 // TYPOGRAPHY
-$font-body: 14px;
-$line-height-body: 28px;
+$font-body: 1.5rem;
+$line-height-body: 2.5rem;
 
-$font-link-1: 12px;
+$font-link-1: 1.2rem;
 $line-height-link-1: 15px;
-$letter-spacing-link-1: 2.5px;
+$ls-link-1: 0.2rem;
 
 $font-link-2: 9px;
 $line-height-link-2: 11px;
-$letter-spacing-link-2: 2px;
+$ls-link-2: 2px;
 
 $font-subhead-1: 15px;
 $line-height-subhead-1: 19px;
@@ -22,8 +22,13 @@ $line-height-subhead-1: 19px;
 $font-subhead-2: 13px;
 $line-height-subhead-2: 17px;
 
-$font-heading-1: 56px;
-$line-height-heading-1: 64px;
+$font-heading-1: 4rem;
+$line-height-heading-1: 4.8rem;
+$ls-heading-1: 0.417rem;
+
+$font-heading-1-mob: 3.2rem;
+$line-height-heading-1-mob: 4rem;
+$ls-heading-1-mob: 0.333rem;
 
 $font-heading-2: 24px;
 $line-height-heading-2: 29px;

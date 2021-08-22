@@ -32,8 +32,6 @@
 
         .header__menu {
             transform: translateY(18.3rem);
-
-            
         }
     }
     // End hamburger-open styles
@@ -98,9 +96,9 @@
         transition: transform 500ms ease-in-out;
         position: absolute;
         right: 0;
-        top: -11.425rem;
+        top: -11.525rem;
         transform: translateY(-18.3rem);
-        
+
         z-index: -2;
 
         @include breakpoint-up(medium) {

@@ -1,7 +1,6 @@
 .noscroll {
 	overflow: hidden;
 	max-height: 100vh;
-	
 }
 
 .pad-20 {
@@ -33,6 +32,14 @@
 
 .white {
 	color: white;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.all-caps {
+	text-transform: uppercase;
 }
 
 .block-at-tablet {
@@ -141,6 +148,25 @@
 
 // TYPOGRAPHY
 
+.text-body {
+	color: rgba(255, 255, 255, 0.6);
+	font-size: $font-body;
+	line-height: $line-height-body;
+	margin-top: 1.6rem;
+	margin-bottom: 2.3rem;
+}
+
+.heading-1 {
+	font-size: $font-heading-1-mob;
+	line-height: $line-height-heading-1-mob;
+	letter-spacing: $ls-heading-1-mob;
+	@include breakpoint-up(medium) {
+		font-size: $font-heading-1;
+		line-height: $line-height-heading-1;
+		letter-spacing: $ls-heading-1;
+	}
+}
+
 .heading-2 {
 	font-weight: 700;
 	font-size: $font-heading-2;
@@ -159,11 +185,39 @@
 	line-height: $line-height-subhead-2;
 }
 
+.link-1 {
+	font-size: $font-link-1;
+	letter-spacing: $ls-link-1;
+}
+
+.cta-2 > a {
+	display: inline-flex;
+	&:hover {
+		text-decoration: underline;
+		&:after {
+			margin-left: 0.8rem;
+		}
+	}
+
+	&:after {
+		content: "";
+		width: 4.2rem;
+		height: 1.2rem;
+		background-size: cover;
+		margin-left: 1.6rem;
+		background-image: url("../../assets/shared/desktop/arrow.svg");
+		transition: margin-left 200ms ease-in-out;
+	}
+}
+
+// .cta-2 > a::after {
+// }
+
 .link-2 {
 	color: $gray;
 	font-size: $font-link-2;
 	line-height: $line-height-link-2;
-	letter-spacing: $letter-spacing-link-2;
+	letter-spacing: $ls-link-2;
 	text-transform: uppercase;
 	font-weight: 700;
 	text-decoration: underline;
@@ -176,4 +230,10 @@
 		font-size: $font-display;
 		line-height: $line-height-display;
 	}
+}
+
+.dec-line {
+	width: 100%;
+	border-bottom: 1px solid rgba(151, 151, 151, 0.25);
+	margin-bottom: 2rem;
 }

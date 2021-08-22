@@ -113,6 +113,14 @@ button {
   color: white;
 }
 
+.bg-black {
+  background-color: black;
+}
+
+.all-caps {
+  text-transform: uppercase;
+}
+
 @media (min-width: 48em) {
   .block-at-tablet {
     display: block;
@@ -213,6 +221,27 @@ button {
   align-items: center;
 }
 
+.text-body {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1.6rem;
+  margin-bottom: 2.3rem;
+}
+
+.heading-1 {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.333rem;
+}
+@media (min-width: 48em) {
+  .heading-1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.417rem;
+  }
+}
+
 .heading-2 {
   font-weight: 700;
   font-size: 24px;
@@ -230,6 +259,30 @@ button {
   font-weight: 400;
   font-size: 13px;
   line-height: 17px;
+}
+
+.link-1 {
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.cta-2 > a {
+  display: inline-flex;
+}
+.cta-2 > a:hover {
+  text-decoration: underline;
+}
+.cta-2 > a:hover:after {
+  margin-left: 0.8rem;
+}
+.cta-2 > a:after {
+  content: "";
+  width: 4.2rem;
+  height: 1.2rem;
+  background-size: cover;
+  margin-left: 1.6rem;
+  background-image: url("../../assets/shared/desktop/arrow.svg");
+  transition: margin-left 200ms ease-in-out;
 }
 
 .link-2 {
@@ -251,6 +304,12 @@ button {
     font-size: 200px;
     line-height: 150px;
   }
+}
+
+.dec-line {
+  width: 100%;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.25);
+  margin-bottom: 2rem;
 }
 
 .header {
@@ -320,7 +379,7 @@ button {
   transition: transform 500ms ease-in-out;
   position: absolute;
   right: 0;
-  top: -11.425rem;
+  top: -11.525rem;
   transform: translateY(-18.3rem);
   z-index: -2;
 }
@@ -345,6 +404,10 @@ button {
   background-color: #000;
   color: #fff;
   letter-spacing: 0.2rem;
+}
+
+.home .post__desc {
+  padding: 7.2rem 2.4rem 7.2rem 3.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */
