@@ -16,14 +16,6 @@
                 background: $black;
             }
 
-            // > span:nth-child(2) {
-            //     // opacity: 0;
-            //     transform: translateX(50px);
-            //     background: transparent;
-            //     -webkit-box-shadow: none;
-            //     box-shadow: none;
-            // }
-
             > span:last-child {
                 transform: rotate(-45deg);
                 background: $black;
@@ -59,6 +51,7 @@
 
     nav {
         position: relative;
+        height: 7.2rem;
     }
 
     &__toggle {
@@ -119,12 +112,21 @@
         > a {
             padding: 0.2rem;
             margin-right: 3.2rem;
+            transition: opacity 150ms ease-in-out;
+            &:hover{
+                opacity: 0.3;
+            }
         }
+
     }
     .cta {
         padding: 1.2rem 1.6rem;
         background-color: $black;
         color: $white;
-        letter-spacing: 0.2rem;
+        transition: all 150ms ease-in-out;
+        &:hover {
+            background-color: $gray;
+            color: $black;
+        }
     }
 }

@@ -3,6 +3,7 @@
     &__story {
         position: relative;
         display: block;
+
         &__text {
             color: $white;
             position: absolute;
@@ -12,6 +13,28 @@
             z-index: 2;
             > .dec-line {
                 border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+            }
+        }
+        // animate accent bar at bottom and raise story on hover
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 0.6rem;
+            z-index: 1;
+            // opacity: 0;
+            transform: scale(0);
+            transition: transform 250ms ease-in-out;
+            background-image: $accent;
+            transform-origin: left center;
+        }
+        transition: transform 250ms ease-in-out;
+        &:hover {
+            transform: translateY(-3.1rem);
+            &::before {
+                transform: scale(1);
             }
         }
         &::after {
@@ -25,17 +48,17 @@
         }
     }
 
-
-    // 560px styles 
+    // 560px styles
     @include breakpoint-up(xsmall) {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: 0;
-        &__story{
+        &__story {
             height: 50rem;
+
             &__text {
                 left: 4.2rem;
-            right: 4.2rem;
+                right: 4.2rem;
             }
         }
         img {
@@ -43,5 +66,9 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+    // 1024px styles
+    @include breakpoint-up(large) {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
