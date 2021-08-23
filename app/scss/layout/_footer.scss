@@ -98,4 +98,23 @@
             justify-self: end;
         }
     }
+
+    // 1024px styles
+    @include breakpoint-up(large) {
+        padding: 6.4rem 7.5rem;
+        .grid {
+            grid-template-columns: 17rem 25.5rem 1fr;
+        }
+        &__menu {
+            flex-direction: column;
+            justify-self: center;
+            margin-bottom: 0;
+            grid-row: 1 / 4;
+            grid-column: 2 / 3;
+        }
+        .cta-2,
+        &__copyright {
+            grid-column: 3 / 4;
+        }
+    }
 }

@@ -144,7 +144,7 @@ button {
 
 .container {
   margin: 0 auto;
-  max-width: 118rem;
+  max-width: 111rem;
 }
 .container--pall {
   padding: 2.6rem;
@@ -579,6 +579,24 @@ button {
   .footer__copyright {
     grid-row: 3/4;
     justify-self: end;
+  }
+}
+@media (min-width: 64em) {
+  .footer {
+    padding: 6.4rem 7.5rem;
+  }
+  .footer .grid {
+    grid-template-columns: 17rem 25.5rem 1fr;
+  }
+  .footer__menu {
+    flex-direction: column;
+    justify-self: center;
+    margin-bottom: 0;
+    grid-row: 1/4;
+    grid-column: 2/3;
+  }
+  .footer .cta-2, .footer__copyright {
+    grid-column: 3/4;
   }
 }
 
