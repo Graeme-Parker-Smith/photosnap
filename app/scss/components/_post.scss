@@ -36,4 +36,11 @@
             }
         }
     }
+
+    // 1200px styles
+    @include breakpoint-up(xlarge){
+        &__desc {
+            flex-basis: 42.63%;
+        }
+    }
 }

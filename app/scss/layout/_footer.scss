@@ -26,18 +26,38 @@
         // social links
         .social--facebook {
             background-image: url("../../assets/shared/desktop/facebook.svg");
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-image: url("../../assets/shared/desktop/facebook-hover.svg");
+            }
         }
         .social--youtube {
             background-image: url("../../assets/shared/desktop/youtube.svg");
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-image: url("../../assets/shared/desktop/youtube-hover.svg");
+            }
         }
         .social--twitter {
             background-image: url("../../assets/shared/desktop/twitter.svg");
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-image: url("../../assets/shared/desktop/twitter-hover.svg");
+            }
         }
         .social--pinterest {
             background-image: url("../../assets/shared/desktop/pinterest.svg");
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-image: url("../../assets/shared/desktop/pinterest-hover.svg");
+            }
         }
         .social--instagram {
             background-image: url("../../assets/shared/desktop/instagram.svg");
+            transition: all 250ms ease-in-out;
+            &:hover {
+                background-image: url("../../assets/shared/desktop/instagram-hover.svg");
+            }
         }
     }
     &__menu {

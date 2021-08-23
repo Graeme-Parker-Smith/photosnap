@@ -513,18 +513,38 @@ button {
 }
 .footer__socials .social--facebook {
   background-image: url("../../assets/shared/desktop/facebook.svg");
+  transition: all 250ms ease-in-out;
+}
+.footer__socials .social--facebook:hover {
+  background-image: url("../../assets/shared/desktop/facebook-hover.svg");
 }
 .footer__socials .social--youtube {
   background-image: url("../../assets/shared/desktop/youtube.svg");
+  transition: all 250ms ease-in-out;
+}
+.footer__socials .social--youtube:hover {
+  background-image: url("../../assets/shared/desktop/youtube-hover.svg");
 }
 .footer__socials .social--twitter {
   background-image: url("../../assets/shared/desktop/twitter.svg");
+  transition: all 250ms ease-in-out;
+}
+.footer__socials .social--twitter:hover {
+  background-image: url("../../assets/shared/desktop/twitter-hover.svg");
 }
 .footer__socials .social--pinterest {
   background-image: url("../../assets/shared/desktop/pinterest.svg");
+  transition: all 250ms ease-in-out;
+}
+.footer__socials .social--pinterest:hover {
+  background-image: url("../../assets/shared/desktop/pinterest-hover.svg");
 }
 .footer__socials .social--instagram {
   background-image: url("../../assets/shared/desktop/instagram.svg");
+  transition: all 250ms ease-in-out;
+}
+.footer__socials .social--instagram:hover {
+  background-image: url("../../assets/shared/desktop/instagram-hover.svg");
 }
 .footer__menu {
   display: flex;
@@ -633,6 +653,11 @@ button {
   .post__desc .text-body {
     margin-top: 2.1rem;
     margin-bottom: 4.3rem;
+  }
+}
+@media (min-width: 75em) {
+  .post__desc {
+    flex-basis: 42.63%;
   }
 }
 
