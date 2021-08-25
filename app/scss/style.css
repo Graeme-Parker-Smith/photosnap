@@ -792,5 +792,21 @@ button {
     row-gap: 8rem;
   }
 }
+@media (min-width: 64em) {
+  .features {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 3rem;
+    padding-left: 3.3rem;
+    padding-right: 3.2rem;
+  }
+  .features > .feature {
+    max-width: 35rem;
+  }
+  .features > .feature:nth-child(2) {
+    align-self: flex-end;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
