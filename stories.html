@@ -68,6 +68,22 @@
 
     <main class="stories-page">
       <section class="featured">
+        <div class="featured__img">
+          <picture>
+            <source
+              media="(min-width: 1024px)"
+              srcset="assets/stories/desktop/moon-of-appalacia.jpg"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="assets/stories/tablet/moon-of-appalacia.jpg"
+            />
+            <img
+              src="assets/stories/mobile/moon-of-appalacia.jpg"
+              alt="moon of appalachia"
+            />
+          </picture>
+        </div>
         <div class="featured__text white">
           <p class="link-1">LAST MONTH’S FEATURED STORY</p>
           <h1 class="heading-1">HAZY FULL MOON OF APPALACHIA</h1>
@@ -81,7 +97,9 @@
             Kentucky and West Virginia, and while the ridges are not high, the
             terrain is extremely rugged.
           </p>
-          <a href="" class="link-1 cta-2">Read the Story</a>
+          <h4 class="link-1 cta-2">
+            <a href="" >Read the Story</a>
+          </h4>
         </div>
       </section>
       <div class="stories">
@@ -359,7 +377,6 @@
           </div>
         </a>
 
-       
         <a href="index.html" class="stories__story">
           <picture>
             <source
@@ -383,7 +400,6 @@
           </div>
         </a>
 
-       
         <a href="index.html" class="stories__story">
           <picture>
             <source
@@ -407,7 +423,6 @@
           </div>
         </a>
 
-       
         <a href="index.html" class="stories__story">
           <picture>
             <source
@@ -423,15 +438,12 @@
           <div class="stories__story__text">
             <p class="stories__story__text__date subhead-2">March 1st 2020</p>
             <h3 class="heading-3">Somwarpet’s Beauty</h3>
-            <p class="stories__story__text__author subhead-2">
-              by Michelle
-            </p>
+            <p class="stories__story__text__author subhead-2">by Michelle</p>
             <div class="dec-line"></div>
             <h4 class="link-1 cta-3">Read Story</h4>
           </div>
         </a>
 
-       
         <a href="index.html" class="stories__story">
           <picture>
             <source
@@ -445,7 +457,9 @@
             />
           </picture>
           <div class="stories__story__text">
-            <p class="stories__story__text__date subhead-2">February 25th 2020</p>
+            <p class="stories__story__text__date subhead-2">
+              February 25th 2020
+            </p>
             <h3 class="heading-3">Land of Dreams</h3>
             <p class="stories__story__text__author subhead-2">
               by William Malcolm
@@ -454,8 +468,6 @@
             <h4 class="link-1 cta-3">Read Story</h4>
           </div>
         </a>
-
-       
       </div>
     </main>
 
@@ -520,3 +532,6 @@
     <script src="app/js/script.js"></script>
   </body>
 </html>
+
+<!-- To do -->
+<!-- featured section text separate div from img, absolute position on tablet & up -->
