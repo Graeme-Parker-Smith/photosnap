@@ -10,7 +10,7 @@
 
     @include breakpoint-up(medium) {
         background-image: url("../../assets/shared/tablet/bg-beta.jpg");
-        padding: 6rem 3.9rem;
+        padding: 6rem 4rem;
         .container {
             display: flex;
             justify-content: space-between;
@@ -21,7 +21,7 @@
         }
     }
     @include breakpoint-up(large) {
-        padding: 6.8rem 11.458%;
+        padding: 6.8rem 7.5rem;
         background-image: url("../../assets/shared/desktop/bg-beta.jpg");
     }
 }
