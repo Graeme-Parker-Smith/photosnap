@@ -11,7 +11,8 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            
+            // align-items: center;
             &:nth-of-type(1){
                 
                 > * {
@@ -67,7 +68,8 @@
     @include breakpoint-up(medium) {
         &__desc {
             &__text-wrapper {
-                padding: 0 5.4rem;
+                padding: 0 10.91%;
+                
                 &::before {
                     left: 0;
                 }
@@ -76,9 +78,12 @@
     }
 
     // 1200px styles
-    @include breakpoint-up(xlarge) {
+    @include breakpoint-up(large) {
         &__desc {
             flex-basis: 42.361%;
+            &__text-wrapper {
+                padding: 0 18.35%;
+            }
             &:not(.hero){
                 > * {
                     width: 64.443%
