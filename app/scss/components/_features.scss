@@ -27,6 +27,13 @@
         margin: 12rem auto;
         width: 45.7rem;
         row-gap: 8rem;
+        &--6 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(33.9rem, 1fr));
+            > .feature:nth-child(2) {
+                align-self: end;
+            }
+        }
     }
 
     // 1024px styles
@@ -37,11 +44,18 @@
         column-gap: 3rem;
         padding-left: 3.3rem;
         padding-right: 3.2rem;
+        
         > .feature {
             max-width: 35rem;
             &:nth-child(2){
                 align-self: flex-end;
             }
+        }
+    }
+
+    @include breakpoint-up(xlarge){
+        &--6 {
+            grid-template-columns: repeat(3, minmax(35rem, 1fr));
         }
     }
 }

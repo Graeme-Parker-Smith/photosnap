@@ -1,0 +1,27 @@
+.beta {
+    background-image: url("../../assets/shared/mobile/bg-beta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6.4rem 3.3rem;
+
+    .heading-1 {
+        margin-bottom: 2.4rem;
+    }
+
+    @include breakpoint-up(medium) {
+        background-image: url("../../assets/shared/tablet/bg-beta.jpg");
+        padding: 6rem 3.9rem;
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .heading-1 {
+                max-width: 40rem;
+            }
+        }
+    }
+    @include breakpoint-up(large) {
+        padding: 6.8rem 11.458%;
+        background-image: url("../../assets/shared/desktop/bg-beta.jpg");
+    }
+}

@@ -371,7 +371,7 @@ button {
 }
 @media (min-width: 35em) {
   .accented::before {
-    left: -5.4rem;
+    left: 0;
     width: 0.6rem;
     height: 100%;
   }
@@ -846,6 +846,13 @@ button {
     width: 45.7rem;
     row-gap: 8rem;
   }
+  .features--6 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33.9rem, 1fr));
+  }
+  .features--6 > .feature:nth-child(2) {
+    align-self: end;
+  }
 }
 @media (min-width: 64em) {
   .features {
@@ -861,6 +868,41 @@ button {
   }
   .features > .feature:nth-child(2) {
     align-self: flex-end;
+  }
+}
+@media (min-width: 75em) {
+  .features--6 {
+    grid-template-columns: repeat(3, minmax(35rem, 1fr));
+  }
+}
+
+.beta {
+  background-image: url("../../assets/shared/mobile/bg-beta.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 6.4rem 3.3rem;
+}
+.beta .heading-1 {
+  margin-bottom: 2.4rem;
+}
+@media (min-width: 48em) {
+  .beta {
+    background-image: url("../../assets/shared/tablet/bg-beta.jpg");
+    padding: 6rem 3.9rem;
+  }
+  .beta .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .beta .container .heading-1 {
+    max-width: 40rem;
+  }
+}
+@media (min-width: 64em) {
+  .beta {
+    padding: 6.8rem 11.458%;
+    background-image: url("../../assets/shared/desktop/bg-beta.jpg");
   }
 }
 
