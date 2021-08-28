@@ -14,4 +14,11 @@
         width: 2.4rem;
         border-radius: 50%;
     }
+    // "Active" styles
+    &.active {
+        background-color: $black;
+        &::after {
+            background-color: $gray;
+        }
+    }
 }

@@ -934,6 +934,12 @@ button {
   width: 2.4rem;
   border-radius: 50%;
 }
+.switch.active {
+  background-color: #000;
+}
+.switch.active::after {
+  background-color: #dfdfdf;
+}
 
 .pricing__switch-container {
   width: 25.5rem;
