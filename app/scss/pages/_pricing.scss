@@ -1,0 +1,12 @@
+.pricing {
+    &__switch-container {
+        width: 25.5rem;
+        height: 3.2rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        #yearly {
+            opacity: 50%;
+        }
+    }
+}

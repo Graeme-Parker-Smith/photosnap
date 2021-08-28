@@ -3,11 +3,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 6.4rem 3.3rem;
-
     .heading-1 {
         margin-bottom: 2.4rem;
     }
-
     @include breakpoint-up(medium) {
         background-image: url("../../assets/shared/tablet/bg-beta.jpg");
         padding: 6rem 4rem;
@@ -17,6 +15,10 @@
             align-items: center;
             .heading-1 {
                 max-width: 40rem;
+            }
+            .cta-2 {
+                margin-right: -0.5rem;
+                width: 17.2rem;
             }
         }
     }

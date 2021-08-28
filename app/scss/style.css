@@ -847,8 +847,15 @@ button {
     row-gap: 8rem;
   }
   .features--6 {
+    width: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33.9rem, 1fr));
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(33.2rem, 1fr));
+    column-gap: 1.1rem;
+    padding: 0 3.8rem;
+  }
+  .features--6 > .feature {
+    max-width: 34rem;
   }
   .features--6 > .feature:nth-child(2) {
     align-self: end;
@@ -898,12 +905,45 @@ button {
   .beta .container .heading-1 {
     max-width: 40rem;
   }
+  .beta .container .cta-2 {
+    margin-right: -0.5rem;
+    width: 17.2rem;
+  }
 }
 @media (min-width: 64em) {
   .beta {
     padding: 6.8rem 7.5rem;
     background-image: url("../../assets/shared/desktop/bg-beta.jpg");
   }
+}
+
+.switch {
+  background-color: #dfdfdf;
+  width: 6.4rem;
+  height: 3.2rem;
+  border-radius: 50%/100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem;
+  cursor: pointer;
+}
+.switch::after {
+  background-color: #000;
+  content: "";
+  height: 2.4rem;
+  width: 2.4rem;
+  border-radius: 50%;
+}
+
+.pricing__switch-container {
+  width: 25.5rem;
+  height: 3.2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.pricing__switch-container #yearly {
+  opacity: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
