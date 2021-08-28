@@ -1,12 +1,80 @@
 .pricing {
+    .post {
+        margin-bottom: 6.4rem;
+    }
+    // monthly/yearly switch component
     &__switch-container {
         width: 25.5rem;
         height: 3.2rem;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        #yearly {
+        margin-bottom: 1.2rem;
+        .opacity-toggle {
             opacity: 50%;
+            transition: opacity 250ms ease-in-out;
+            &.active {
+                opacity: 100%;
+            }
+        }
+    }
+    // Pricng Plans section
+    .plans {
+        &__plan {
+            display: grid;
+            justify-items: center;
+            text-align: center;
+            background-color: #f5f5f5;
+            padding: 5.6rem 2.2rem 4rem 2.2rem;
+            margin-bottom: 2.4rem;
+            .text-body {
+                margin-top: 0;
+                margin-bottom: 4rem;
+            }
+            .btn {
+                transition: background-color 250ms ease-in-out;
+                &:hover {
+                    background-color: $gray;
+                    color: $black;
+                }
+            }
+            &.accented {
+                background-color: $black;
+                color: $white;
+                .btn {
+                    background-color: $white;
+                    color: $black;
+                    &:hover {
+                        background-color: $gray;
+                    }
+                }
+                // Override default ".accented" styles specifically for "plan" component
+                &::before {
+                    left: 0;
+                    width: 100%;
+                    height: 0.6rem;
+                }
+            }
+        }
+
+        @include breakpoint-up(medium) {
+
+            &__plan {
+                grid-template-columns: 50% 50%;
+                grid-template-rows: repeat(3, 1fr);
+                .heading-1 {
+                    grid-column: 2 / 3;
+                }
+                *:not(.heading-1) {
+                    grid-column: 1 / 2;
+                }
+                &.accented {
+                    &::before {
+                        width: 0.6rem;
+                        height: 100%;
+                    }
+                }
+            }
         }
     }
 }

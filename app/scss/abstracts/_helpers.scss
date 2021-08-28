@@ -42,15 +42,19 @@
 }
 
 .white {
-	color: white;
+	color: white !important;
 }
 
 .bg-black {
-	background-color: black;
+	background-color: black !important;
 }
 
 .all-caps {
 	text-transform: uppercase;
+}
+
+.bold {
+	font-weight: bold;
 }
 
 .block-at-tablet {
@@ -177,7 +181,7 @@
 	font-weight: 700;
 	font-size: $font-heading-2;
 	line-height: $line-height-heading-2;
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.8rem;
 }
 .heading-3 {
 	font-weight: 700;

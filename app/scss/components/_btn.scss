@@ -1,3 +1,10 @@
 .btn {
-    
+    height: 4rem;
+    width: 75.94%;
+    color: $white;
+    background-color: $black;
+
+    @include breakpoint-up(medium){
+        width: 27rem;
+    }
 }
