@@ -26,10 +26,14 @@ btnHamburger.addEventListener("click", function () {
   }
 });
 
-// text opacity-toggle
-const opacityToggleItems = document.querySelectorAll(".opacity-toggle");
 // Switch Toggle
 const $switch = document.querySelector("#switch");
+// text opacity-toggle
+const opacityToggleItems = document.querySelectorAll(".opacity-toggle");
+// Subscription amount and interval text
+const subAmountList = document.querySelectorAll(".sub-amount");
+const subIntList = document.querySelectorAll(".sub-int");
+
 $switch.addEventListener("click", () => {
   if ($switch.classList.contains("active")) {
     $switch.classList.remove("active");

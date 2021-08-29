@@ -998,10 +998,6 @@ button {
   background-color: #dfdfdf;
   color: #000;
 }
-.pricing .plans__plan.accented {
-  background-color: #000;
-  color: #fff;
-}
 .pricing .plans__plan.accented .btn {
   background-color: #fff;
   color: #000;
@@ -1017,17 +1013,50 @@ button {
 @media (min-width: 48em) {
   .pricing .plans__plan {
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3, 1fr);
+    justify-items: start;
+    text-align: left;
+    padding: 4rem;
+    max-width: 75rem;
+    margin: 0 auto 2.4rem auto;
   }
-  .pricing .plans__plan .heading-1 {
-    grid-column: 2/3;
-  }
-  .pricing .plans__plan *:not(.heading-1) {
+  .pricing .plans__plan * {
     grid-column: 1/2;
+  }
+  .pricing .plans__plan .text-body {
+    max-width: 27rem;
+  }
+  .pricing .plans__plan .sub-amount,
+.pricing .plans__plan .sub-int {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: end;
+  }
+  .pricing .plans__plan .sub-int {
+    grid-row: 2/3;
   }
   .pricing .plans__plan.accented::before {
     width: 0.6rem;
     height: 100%;
+  }
+}
+@media (min-width: 75em) {
+  .pricing .plans {
+    display: flex;
+    column-gap: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+    align-items: center;
+  }
+  .pricing .plans__plan {
+    width: 31.54%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40.7rem;
+  }
+  .pricing .plans__plan.accented {
+    height: 47rem;
   }
 }
 

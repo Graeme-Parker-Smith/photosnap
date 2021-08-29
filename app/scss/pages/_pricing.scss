@@ -39,8 +39,6 @@
                 }
             }
             &.accented {
-                background-color: $black;
-                color: $white;
                 .btn {
                     background-color: $white;
                     color: $black;
@@ -56,23 +54,56 @@
                 }
             }
         }
-
+        // "Plan" tablet styles
         @include breakpoint-up(medium) {
-
             &__plan {
                 grid-template-columns: 50% 50%;
-                grid-template-rows: repeat(3, 1fr);
-                .heading-1 {
-                    grid-column: 2 / 3;
-                }
-                *:not(.heading-1) {
+                justify-items: start;
+                text-align: left;
+                padding: 4rem;
+                max-width: 75rem;
+                margin: 0 auto 2.4rem auto;
+                // grid-template-rows: repeat(3, 1fr);
+                // grid-template-rows: auto;
+                * {
                     grid-column: 1 / 2;
+                }
+                .text-body {
+                    max-width: 27rem;
+                }
+                .sub-amount,
+                .sub-int {
+                    grid-column: 2 / 3;
+                    grid-row: 1/2;
+                    justify-self: end;
+                }
+                .sub-int {
+                    grid-row: 2/3;
                 }
                 &.accented {
                     &::before {
                         width: 0.6rem;
                         height: 100%;
                     }
+                }
+            }
+        }
+
+        @include breakpoint-up(xlarge) {
+            display: flex;
+            column-gap: 3rem;
+            padding-left: 0;
+            padding-right: 0;
+            align-items: center;
+            &__plan {
+                width: 31.54%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                height: 40.7rem;
+                &.accented {
+                    height: 47rem;
                 }
             }
         }
