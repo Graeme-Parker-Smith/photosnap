@@ -88,7 +88,7 @@
                 }
             }
         }
-
+        // "plans" desktop styles
         @include breakpoint-up(xlarge) {
             display: flex;
             column-gap: 3rem;
