@@ -1,0 +1,38 @@
+.compare {
+    font-size: $font-link-1;
+    letter-spacing: $ls-link-1;
+    font-weight: 700;
+    .check:not(.checked) {
+        opacity: 0;
+    }
+    &__row {
+        &__feature {
+            margin-bottom: 1.6rem;
+        }
+        &__plan {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1.8rem 1.5rem;
+            grid-auto-flow: column;
+        }
+       
+        .dec-line {
+            margin: 2.4rem 0;
+        }
+    }
+
+    @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr repeat(3, 14rem);
+        grid-template-rows: 1.5rem;
+        row-gap: 2.4rem;
+        max-width: 81.1rem;
+        span {
+            height: 1.5rem;
+        }
+        .dec-line, .divider-line {
+            grid-column: 1 / 5;
+            margin: 0;
+        }
+    }
+}
